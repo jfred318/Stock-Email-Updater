@@ -1,1 +1,16 @@
-To use this program, you must complete a couple of steps. First, you need a password, not the password you normally sign into your email with, but an app password. List the password under "user_password" and use your email for the receiver and sender addresses. Then, I created an EC2 instance through Amazon web services and used the terminal to connect it to my Python script. The instance runs twice a day and pulls the stock information from Yahoo Finance.
+"""
+# Daily Stock Update Email Script
+
+This Python script retrieves stock data from Yahoo Finance for a specified list of companies, formats it into an email body, and sends a daily email update. The email includes details like the current price, 52-week high and low, and daily percentage change.
+
+## Prerequisites
+
+- **Python 3.x**: Ensure Python is installed on your machine.
+- **Required Libraries**: `smtplib`, `email`, and `yfinance`. The `smtplib` and `email` libraries come with Python, but you’ll need to install `yfinance` if you don’t already have it.
+
+### Installing `yfinance`
+
+Install the `yfinance` library by running:
+
+```bash
+pip install finance
